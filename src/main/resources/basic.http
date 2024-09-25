@@ -1,0 +1,33 @@
+GET http://localhost:7000
+
+###
+
+GET http://localhost:7000/poem
+
+###
+
+GET http://localhost:7000/poem/1
+Content-Type: application/x-www-form-urlencoded
+
+###
+POST http://localhost:7000/poem/createpoem
+Content-Type: application/x-www-form-urlencoded
+
+poem=hello its me i was wondering if after all these years&
+type=Rhymed_verse&
+author=bekhanogotto&
+title=helloitsme
+
+###
+
+PUT localhost:7000/poem/updatepoem/6
+Content-Type: application/x-www-form-urlencoded
+
+poem=GO FUCK YOURSELF&
+type=Rhymed_verse&
+author=drake&
+title=certified pedophile
+
+###
+
+DELETE localhost:7000/poem/deletepoem/7
